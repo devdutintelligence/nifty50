@@ -1,6 +1,6 @@
 [
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "HDFCBANK",
         "last_price": 756.2,
         "day_change": -26.09999999999991,
@@ -14,7 +14,7 @@
         "week_52_low": 741.05
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "BHARTIARTL",
         "last_price": 1843.9,
         "day_change": 9.0,
@@ -28,7 +28,7 @@
         "week_52_low": 1660.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "RELIANCE",
         "last_price": 1348.1,
         "day_change": -65.0,
@@ -42,7 +42,7 @@
         "week_52_low": 1114.85
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ICICIBANK",
         "last_price": 1233.8,
         "day_change": -25.90000000000009,
@@ -56,7 +56,7 @@
         "week_52_low": 1218.1
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "SBIN",
         "last_price": 1019.5,
         "day_change": -41.09999999999991,
@@ -70,7 +70,7 @@
         "week_52_low": 730.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ONGC",
         "last_price": 281.95,
         "day_change": 11.75,
@@ -84,7 +84,7 @@
         "week_52_low": 205.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "INFY",
         "last_price": 1269.7,
         "day_change": -9.399999999999864,
@@ -98,7 +98,7 @@
         "week_52_low": 1215.1
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "LT",
         "last_price": 3564.1,
         "day_change": -85.20000000000027,
@@ -112,7 +112,7 @@
         "week_52_low": 2965.3
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "HCLTECH",
         "last_price": 1364.4,
         "day_change": -16.899999999999864,
@@ -126,7 +126,7 @@
         "week_52_low": 1297.7
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TCS",
         "last_price": 2389.8,
         "day_change": 12.400000000000091,
@@ -140,7 +140,7 @@
         "week_52_low": 2348.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "AXISBANK",
         "last_price": 1205.2,
         "day_change": -16.899999999999864,
@@ -154,7 +154,7 @@
         "week_52_low": 1032.35
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "SHRIRAMFIN",
         "last_price": 903.8,
         "day_change": -52.200000000000045,
@@ -168,7 +168,7 @@
         "week_52_low": 566.5
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "KOTAKBANK",
         "last_price": 366.15,
         "day_change": -4.9500000000000455,
@@ -182,7 +182,7 @@
         "week_52_low": 355.25
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "M&M",
         "last_price": 3041.3,
         "day_change": -86.79999999999973,
@@ -196,7 +196,7 @@
         "week_52_low": 2425.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "MARUTI",
         "last_price": 12389.0,
         "day_change": -322.0,
@@ -210,7 +210,7 @@
         "week_52_low": 11059.45
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "BAJFINANCE",
         "last_price": 843.8,
         "day_change": -38.950000000000045,
@@ -224,7 +224,7 @@
         "week_52_low": 787.9
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ETERNAL",
         "last_price": 233.17,
         "day_change": -9.01000000000002,
@@ -238,7 +238,7 @@
         "week_52_low": 194.8
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "BEL",
         "last_price": 404.75,
         "day_change": -8.699999999999989,
@@ -252,7 +252,7 @@
         "week_52_low": 256.2
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "POWERGRID",
         "last_price": 295.5,
         "day_change": 0.5,
@@ -266,7 +266,7 @@
         "week_52_low": 250.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "COALINDIA",
         "last_price": 445.05,
         "day_change": 1.3500000000000227,
@@ -280,7 +280,7 @@
         "week_52_low": 356.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "NTPC",
         "last_price": 375.65,
         "day_change": -2.75,
@@ -294,7 +294,7 @@
         "week_52_low": 315.55
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TATASTEEL",
         "last_price": 193.22,
         "day_change": -3.430000000000007,
@@ -308,7 +308,7 @@
         "week_52_low": 125.3
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "INDIGO",
         "last_price": 4099.5,
         "day_change": -195.19999999999982,
@@ -322,7 +322,7 @@
         "week_52_low": 3895.2
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ITC",
         "last_price": 294.7,
         "day_change": -1.0,
@@ -336,7 +336,7 @@
         "week_52_low": 288.75
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "GRASIM",
         "last_price": 2628.2,
         "day_change": -19.600000000000364,
@@ -350,7 +350,7 @@
         "week_52_low": 2465.5
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "HINDUNILVR",
         "last_price": 2074.4,
         "day_change": -60.40000000000009,
@@ -364,7 +364,7 @@
         "week_52_low": 2033.3
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TMPV",
         "last_price": 303.2,
         "day_change": -14.75,
@@ -378,7 +378,7 @@
         "week_52_low": 303.5
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "SUNPHARMA",
         "last_price": 1793.6,
         "day_change": -1.800000000000182,
@@ -392,7 +392,7 @@
         "week_52_low": 1548.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "WIPRO",
         "last_price": 191.6,
         "day_change": 2.549999999999983,
@@ -406,7 +406,7 @@
         "week_52_low": 187.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ADANIENT",
         "last_price": 1823.0,
         "day_change": -63.59999999999991,
@@ -420,7 +420,7 @@
         "week_52_low": 1813.7
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ULTRACEMCO",
         "last_price": 11049.0,
         "day_change": -155.0,
@@ -434,7 +434,7 @@
         "week_52_low": 10325.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "JIOFIN",
         "last_price": 232.55,
         "day_change": -4.799999999999983,
@@ -448,7 +448,7 @@
         "week_52_low": 203.1
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TRENT",
         "last_price": 3399.6,
         "day_change": -79.30000000000018,
@@ -462,7 +462,7 @@
         "week_52_low": 3340.3
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "BAJAJFINSV",
         "last_price": 1694.7,
         "day_change": -51.5,
@@ -476,7 +476,7 @@
         "week_52_low": 1662.7
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TITAN",
         "last_price": 3981.5,
         "day_change": -57.80000000000018,
@@ -490,7 +490,7 @@
         "week_52_low": 2925.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "APOLLOHOSP",
         "last_price": 7549.0,
         "day_change": -31.5,
@@ -504,7 +504,7 @@
         "week_52_low": 6430.25
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "EICHERMOT",
         "last_price": 6811.5,
         "day_change": -181.0,
@@ -518,7 +518,7 @@
         "week_52_low": 4999.95
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TECHM",
         "last_price": 1391.6,
         "day_change": -16.90000000000009,
@@ -532,7 +532,7 @@
         "week_52_low": 1209.4
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ADANIPORTS",
         "last_price": 1337.8,
         "day_change": -38.100000000000136,
@@ -546,7 +546,7 @@
         "week_52_low": 1041.5
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "HINDALCO",
         "last_price": 866.7,
         "day_change": -1.9499999999999318,
@@ -560,7 +560,7 @@
         "week_52_low": 546.45
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "JSWSTEEL",
         "last_price": 1130.3,
         "day_change": -25.700000000000045,
@@ -574,7 +574,7 @@
         "week_52_low": 905.2
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "BAJAJ-AUTO",
         "last_price": 8901.0,
         "day_change": -147.5,
@@ -588,7 +588,7 @@
         "week_52_low": 7089.35
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "DRREDDY",
         "last_price": 1281.7,
         "day_change": -19.0,
@@ -602,7 +602,7 @@
         "week_52_low": 1020.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "CIPLA",
         "last_price": 1242.3,
         "day_change": -2.1000000000001364,
@@ -616,7 +616,7 @@
         "week_52_low": 1216.6
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "HDFCLIFE",
         "last_price": 610.2,
         "day_change": -2.699999999999932,
@@ -630,7 +630,7 @@
         "week_52_low": 590.05
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "MAXHEALTH",
         "last_price": 975.1,
         "day_change": -13.100000000000023,
@@ -644,7 +644,7 @@
         "week_52_low": 933.8
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "ASIANPAINT",
         "last_price": 2207.4,
         "day_change": -62.79999999999973,
@@ -658,7 +658,7 @@
         "week_52_low": 2115.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "NESTLEIND",
         "last_price": 1193.2,
         "day_change": -10.899999999999864,
@@ -672,7 +672,7 @@
         "week_52_low": 1074.0
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "SBILIFE",
         "last_price": 1837.6,
         "day_change": -14.200000000000045,
@@ -686,7 +686,7 @@
         "week_52_low": 1430.55
     },
     {
-        "timestamp": "2026-03-28 15:50:07",
+        "timestamp": "2026-03-28 16:18:02",
         "symbol": "TATACONSUM",
         "last_price": 1048.5,
         "day_change": -7.599999999999909,
