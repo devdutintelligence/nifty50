@@ -19,12 +19,11 @@ STOCK_LIST = [
 # Dynamically create the ("NSE_SYMBOL1", "NSE_SYMBOL2", ...) tuple needed for LTP and OHLC
 exchange_symbols = tuple(f"NSE_{symbol}" for symbol in STOCK_LIST)
 
-# 2. Read the API token from the 'key' file
-try:
-    with open('key', 'r') as file:
-        API_AUTH_TOKEN = file.read().strip()
-except FileNotFoundError:
-    print("Error: The 'key' file was not found in the current directory.")
+# 2. Read the API token directly from the environment (No file needed!)
+API_AUTH_TOKEN = os.getenv('MY_API_KEY')
+
+if not API_AUTH_TOKEN:
+    print("Error: The 'MY_API_KEY' environment variable was not found.")
     exit(1)
 
 # 3. Initialize Groww API
@@ -38,7 +37,7 @@ ltp_response = {}
 ohlc_response = {}
 
 try:
-    # A. Fetch Live Quotes (Requires looping through individual symbols)
+    # A. Fetch Live Quotes 
     print("Pulling individual live quotes (this may take a moment)...")
     for symbol in STOCK_LIST:
         try:
@@ -47,7 +46,6 @@ try:
                 segment=groww.SEGMENT_CASH,
                 trading_symbol=symbol
             )
-            # A tiny pause (0.1s) is added to avoid hitting API rate limits too quickly
             time.sleep(0.1) 
         except Exception as e:
             print(f"  -> Warning: Could not fetch quote for {symbol}: {e}")
@@ -84,24 +82,10 @@ structured_data = {
     }
 }
 
-# 6. Handle the JSON file creation and safe updating
+# 6. OVERWRITE previous data with the latest snapshot
 json_filename = 'market_data_50.json'
-historical_data = []
 
-if os.path.exists(json_filename):
-    try:
-        with open(json_filename, 'r') as json_file:
-            historical_data = json.load(json_file)
-            if not isinstance(historical_data, list):
-                historical_data = [historical_data]
-    except json.JSONDecodeError:
-        print("Existing JSON file is corrupted or empty. Creating a new list.")
-        historical_data = []
-
-historical_data.append(structured_data)
-
-# 7. Write everything back to the file
 with open(json_filename, 'w') as json_file:
-    json.dump(historical_data, json_file, indent=4)
+    json.dump(structured_data, json_file, indent=4)
 
-print(f"Success: Market data updated and saved to {json_filename}")
+print(f"Success: Old data deleted. Latest market data saved to {json_filename}")
