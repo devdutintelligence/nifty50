@@ -26,17 +26,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install growwapi 
 
-      - name: Create the API key file
-        run: echo "${{ secrets.MY_API_KEY }}" > key
-
       - name: Run the Python script
-        # IMPORTANT: Change market_tracker.py if your file is named differently
+        # 👇 The secret is securely injected into the environment here
+        env:
+          MY_API_KEY: ${{ secrets.MY_API_KEY }}
         run: python market_tracker.py 
 
-      - name: Commit and push JSON data
+      - name: Commit and push JSON snapshot
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add market_data_50.json
-          git commit -m "Auto-update market data" || exit 0
+          git commit -m "Overwrite with latest market data snapshot" || exit 0
           git push
