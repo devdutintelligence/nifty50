@@ -16,10 +16,9 @@ STOCK_LIST = [
     "NESTLEIND", "SBILIFE", "TATACONSUM"
 ]
 
-# Dynamically create the ("NSE_SYMBOL1", "NSE_SYMBOL2", ...) tuple needed for LTP and OHLC
 exchange_symbols = tuple(f"NSE_{symbol}" for symbol in STOCK_LIST)
 
-# 2. Read the API token directly from the environment (No file needed!)
+# 2. Read the API token directly from the environment
 API_AUTH_TOKEN = os.getenv('MY_API_KEY')
 
 if not API_AUTH_TOKEN:
@@ -51,41 +50,52 @@ try:
             print(f"  -> Warning: Could not fetch quote for {symbol}: {e}")
             live_quotes[symbol] = None
 
-    # B. Fetch LTP for all instruments at once
-    print("Pulling batched LTP data...")
-    ltp_response = groww.get_ltp(
-        segment=groww.SEGMENT_CASH,
-        exchange_trading_symbols=exchange_symbols
-    )
-
-    # C. Fetch OHLC for all instruments at once
-    print("Pulling batched OHLC data...")
-    ohlc_response = groww.get_ohlc(
-        segment=groww.SEGMENT_CASH,
-        exchange_trading_symbols=exchange_symbols
-    )
-    
+    # B. Fetch batched LTP and OHLC as a backup/verification
+    print("Pulling batched LTP and OHLC data...")
+    ltp_response = groww.get_ltp(segment=groww.SEGMENT_CASH, exchange_trading_symbols=exchange_symbols)
+    ohlc_response = groww.get_ohlc(segment=groww.SEGMENT_CASH, exchange_trading_symbols=exchange_symbols)
     print("All data fetched successfully.")
 
 except Exception as e:
-    print(f"Error during batched data fetching: {e}")
+    print(f"Error during data fetching: {e}")
     exit(1)
 
-# 5. Structure the combined data
-structured_data = {
-    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    "total_symbols_tracked": len(STOCK_LIST),
-    "data": {
-        "live_quotes": live_quotes,
-        "ltp": ltp_response,
-        "ohlc": ohlc_response
-    }
-}
+# 5. Flatten and Structure the Data for Power BI
+print("Structuring data for dashboard integration...")
+current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+flat_market_data = []
 
-# 6. OVERWRITE previous data with the latest snapshot
+for symbol in STOCK_LIST:
+    nse_symbol = f"NSE_{symbol}"
+    
+    # Safely extract data, defaulting to an empty dictionary if API failed
+    quote = live_quotes.get(symbol) or {}
+    ltp = ltp_response.get(nse_symbol)
+    ohlc = ohlc_response.get(nse_symbol) or {}
+    quote_ohlc = quote.get("ohlc") if isinstance(quote.get("ohlc"), dict) else {}
+
+    # Build a clean, single-level record for this specific stock
+    stock_record = {
+        "timestamp": current_time,
+        "symbol": symbol,
+        "last_price": ltp if ltp is not None else quote.get("last_price"),
+        "day_change": quote.get("day_change"),
+        "day_change_perc": quote.get("day_change_perc"),
+        "open": ohlc.get("open") if ohlc else quote_ohlc.get("open"),
+        "high": ohlc.get("high") if ohlc else quote_ohlc.get("high"),
+        "low": ohlc.get("low") if ohlc else quote_ohlc.get("low"),
+        "close": ohlc.get("close") if ohlc else quote_ohlc.get("close"),
+        "volume": quote.get("volume"),
+        "week_52_high": quote.get("week_52_high"),
+        "week_52_low": quote.get("week_52_low")
+    }
+    
+    flat_market_data.append(stock_record)
+
+# 6. OVERWRITE previous data with the flat snapshot
 json_filename = 'market_data_50.json'
 
 with open(json_filename, 'w') as json_file:
-    json.dump(structured_data, json_file, indent=4)
+    json.dump(flat_market_data, json_file, indent=4)
 
-print(f"Success: Old data deleted. Latest market data saved to {json_filename}")
+print(f"Success: Market data flattened and saved to {json_filename}")
